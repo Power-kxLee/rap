@@ -1,0 +1,139 @@
+
+.apphome {
+  background:#facf5a ;
+  height: 100vh;
+  overflow: hidden;
+  .nut-tabs {
+
+    height: 100%;
+  }
+  .nut-tabs__titles {
+    
+    height: 400px;
+    .tabs_title_me {
+      display: flex;
+      position: relative;
+    }
+    .tabs_title_me .bj{
+      content: "";
+      width:100%;
+      height:100%;
+      position: absolute;
+      left:0;
+      top:0;
+      background: inherit;
+      filter: blur(20px);
+      z-index: 2;
+    }
+    .nut-tabs__titles-item {
+      padding:0 10px;
+      position: relative;
+      z-index: 3;
+    }
+    .nut-tabs__list {
+      height: 400px;
+      position: relative;
+    }
+    .soverText {
+      width: 280px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: white;
+    }
+    .coverImg {
+      width: 280px;
+      height: 280px;
+    }
+    .bj {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+  .nut-tabs__titles-item.active {
+    .soverText  {
+      color:#facf5a;
+    }
+    .coverImg {
+      box-shadow: #facf5a 0 0px 20px;
+      border-radius: 20px;
+    }
+  }
+  .nut-tabs {
+    .nut-tab-pane {
+      height: calc(100vh - 400px);
+      padding: 20px;
+    }
+    .tab-dy-content {
+      border-radius: 16px;
+      box-sizing: border-box;
+      position: relative;
+      
+      .c-body {
+        position: relative;
+        z-index: 2;
+      }
+    }
+    .tab-dy-title {
+      color: #242424;
+      font-size: 38px;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 0 1px rgb(175, 175, 175);
+    }
+    .description {
+      font-size: 26px;
+      color: #085f63;
+      white-space: normal;  
+      overflow: hidden; 
+      text-overflow: ellipsis;  
+      display: -webkit-box;  
+      -webkit-line-clamp: 3;  /* 控制行数 */ 
+      -webkit-box-orient: vertical;
+    }
+  }
+  .song_list {
+    padding: 20px 0;
+    .song {
+      display: flex;
+      color:rgb(59, 59, 59);
+      padding: 10px 0;
+      overflow: hidden;
+      cursor: pointer;
+      .song-np {
+        padding: 0 10px;
+        flex: 1;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .song-n {
+        display: block;
+        width: 60px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 30px;
+        color: #919191;
+        flex-shrink: 0;
+      }
+      .song-name {
+        color: black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+      }
+      .song-people {
+        font-size: 28px;
+        color: #919191;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+      }
+    }
+  }
+}
